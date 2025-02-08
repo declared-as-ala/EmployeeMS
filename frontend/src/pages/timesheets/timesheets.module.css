@@ -1,0 +1,80 @@
+/* timesheets.module.css */
+
+/* Container for the list or form content */
+.container {
+  max-width: 700px;
+  margin: 2rem auto;
+  background-color: #ffffff;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Error message styling */
+.error {
+  color: #e74c3c;
+  margin: 1rem 0;
+}
+
+/* Buttons and actions container */
+.actions {
+  margin: 1rem 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.button {
+  display: inline-block;
+  background-color: #007acc;
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #005fa3;
+}
+
+/* Table styling for the list view */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 0.5rem 1rem;
+  text-align: left;
+}
+
+/* Form styling */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* For the form labels and inputs */
+.form label {
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+.form input,
+.form select,
+.form textarea {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Last row of form actions (Save, Cancel, etc.) */
+.form .actions {
+  margin-top: 1rem;
+}
