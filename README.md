@@ -3,9 +3,7 @@
 ## 📌 Features
 
 ### 🖥️ Backend (Node.js + Express + MySQL)
-- ✅ **Validation**: Ensures start time is before end time.
-- ✅ **Foreign Key Checks**: Validates that `employeeId` exists in the database.
-- ✅ **Date Formatting**: Converts ISO date strings to MySQL `DATETIME` format.
+
 - ✅ **MVC Architecture**: Implements a clean separation of concerns with:
   - **Routes** for API endpoints.
   - **Controllers** for handling requests.
@@ -26,7 +24,26 @@
 
 ### 🔧 Backend Setup:
 ```sh
+create Database employee_management;
 cd backend
 npm install
 cp .env.example .env  # Configure environment variables
 npm run dev
+### 🎨 Frontend Setup:
+```sh
+cd frontend
+npm install
+npm run dev
+```
+
+### 🔗 Access the Application:
+- **Frontend**: Open [`http://localhost:3000`](http://localhost:3000) (or configured port).
+- **Backend**: Runs on [`http://localhost:4000`](http://localhost:4000) by default (adjust if needed).
+
+---
+
+## ✅ Best Practices Followed:
+- 🏗 **Clean Architecture**: Services handle logic, controllers manage requests.
+- 🔍 **Data Validation**: Ensures `startTime < endTime` and employee exists.
+- 🕒 **Automatic Date Formatting**: Converts timestamps to MySQL-friendly format.
+- 🔽 **Employee Dropdown**: Prevents manual entry errors.
