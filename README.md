@@ -24,11 +24,15 @@
 
 ### 🔧 Backend Setup:
 ```sh
-create Database employee_management;
+# Create the database
+CREATE DATABASE employee_management;
+
 cd backend
 npm install
 cp .env.example .env  # Configure environment variables
 npm run dev
+```
+
 ### 🎨 Frontend Setup:
 ```sh
 cd frontend
