@@ -1,25 +1,32 @@
+# Timesheet Management System (Node.js + React)
 
-- **Backend** (Node + Express + MySQL):
-  - Validation for start/end times.
-  - Foreign key checks to ensure `employeeId` exists.
-  - Reformatting of date strings from ISO to MySQL DATETIME.
-  - Simple MVC structure with routes, controllers, models, and a service layer.
-- **Frontend** (React + TypeScript + Vite):
-  - Form to create/update timesheets, including a **dropdown** of employees so no one types IDs manually.
-  - Table + **calendar toggle** for listing timesheets.
-  - Minimal but consistent styling (Material UI or your chosen approach).
-  - Data validated and times are properly sent to the backend.
+## 📌 Features
 
-**How to Run**:
-1. **Backend**:
-   - `cd backend` → `npm install` → configure `.env` → `npm run dev`.
-2. **Frontend**:
-   - `cd frontend` → `npm install` → `npm run dev`.
-3. **Navigate** to `http://localhost:3000` for the frontend (or the configured port).
-4. **Backend** typically runs at `http://localhost:4000` (adjust if needed).
+### 🖥️ Backend (Node.js + Express + MySQL)
+- ✅ **Validation**: Ensures start time is before end time.
+- ✅ **Foreign Key Checks**: Validates that `employeeId` exists in the database.
+- ✅ **Date Formatting**: Converts ISO date strings to MySQL `DATETIME` format.
+- ✅ **MVC Architecture**: Implements a clean separation of concerns with:
+  - **Routes** for API endpoints.
+  - **Controllers** for handling requests.
+  - **Models** for database interactions.
+  - **Services** for business logic.
 
-I’ve followed the best practices you mentioned:
-- **Clean architecture** (services for logic, controllers for requests).
-- **Validation** (start < end, employee must exist).
-- **Auto** formatting of dates to keep MySQL happy.
-- **Dropdown** for employees (no manual ID typin
+### 💻 Frontend (React + TypeScript + Vite)
+- ✅ **Timesheet Form**: Allows users to create/update timesheets.
+  - Includes a **dropdown** for selecting employees (no manual ID typing).
+- ✅ **Timesheet Listing**: 
+  - Displays data in a **table** with a **calendar toggle** view.
+- ✅ **Styling**: Minimal yet consistent UI (Material UI or custom styling).
+- ✅ **Validation**: Ensures proper data before sending requests to the backend.
+
+---
+
+## 🚀 How to Run the Project
+
+### 🔧 Backend Setup:
+```sh
+cd backend
+npm install
+cp .env.example .env  # Configure environment variables
+npm run dev
